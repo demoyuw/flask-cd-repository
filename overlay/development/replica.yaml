@@ -1,0 +1,8 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask
+spec:
+  containers:
+  - name: flask
+    image: demoyuw/flask-api:develop
