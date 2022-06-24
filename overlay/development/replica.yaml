@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: flask
 spec:
-  containers:
-  - name: flask
-    image: demoyuw/flask-api:develop
+  template:
+    spec:
+      containers:
+      - name: flask
+        image: demoyuw/flask-api:develop
